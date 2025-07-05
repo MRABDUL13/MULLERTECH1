@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MullerTech Bot</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Modern Header -->
+  <header class="cypherx-header" id="header">
+    <div class="header-top">
+      <h1><span>Muller</span>Tech</h1>
+      <span class="version-tag">latest version</span>
+      <button class="support-btn" id="supportBtn">💜 Support Developer</button>
+    </div>
+    <h2>The Next-generation WhatsApp Bot</h2>
+    <div class="nav-buttons">
+      <button class="primary" id="quickDeployBtn"><i class="fas fa-bolt"></i> Quick Deploy</button>
+      <button class="secondary" id="manualInstallBtn"><i class="fas fa-cog"></i> Manual Install</button>
+    </div>
+  </header>
+
+  <!-- Quick Access Section -->
+  <main>
+    <section class="cards">
+      <div class="card">
+        <h3><i class="fas fa-key"></i> QUICK ACCESS</h3>
+        <h4>Pair Code</h4>
+        <button id="server1Btn"><i class="fas fa-server"></i> Server 1</button>
+        <button id="server2Btn"><i class="fas fa-server"></i> Server 2</button>
+        <button id="server3Btn"><i class="fas fa-server"></i> Server 3</button>
+      </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section class="cards" id="features">
+      <div class="card">
+        <h3><i class="fas fa-qrcode"></i> QR Generator</h3>
+        <button id="qrServer1Btn"><i class="fas fa-server"></i> Server 1</button>
+        <button id="qrServer2Btn"><i class="fas fa-server"></i> Server 2</button>
+      </div>
+
+      <div class="card" id="deploy">
+        <h3><i class="fas fa-cloud-upload-alt"></i> Deployment</h3>
+        <button id="herokuBtn"><i class="fab fa-heroku"></i> Heroku</button>
+        <button id="replitBtn"><i class="fas fa-code"></i> Replit</button>
+      </div>
+
+      <div class="card" id="download">
+        <h3><i class="fas fa-download"></i> Download</h3>
+        <button id="latestRepoBtn"><i class="fas fa-rocket"></i> Latest Repo</button>
+        <button id="githubRepoBtn"><i class="fab fa-github"></i> Github Repo</button>
+      </div>
+      
+      <div class="card stats">
+        <h3><i class="fas fa-chart-line"></i> GitHub Stats</h3>
+        <p><strong>916</strong> GitHub Stars</p>
+        <p><strong>2.8K</strong> Forks</p>
+        <p><strong>99.8%</strong> Uptime</p>
+        <p><strong>342+</strong> Features</p>
+      </div>
+    </section>
+
+    <!-- Setup Section -->
+    <section class="setup">
+      <div class="card">
+        <h3><i class="fas fa-magic"></i> One-Click Deployment</h3>
+        <div class="tabs">
+          <span class="active" data-tab="localSetup">Local Setup</span>
+          <span data-tab="termuxSetup">Termux</span>
+        </div>
+        <div class="tab-content" id="localSetup">
+          <ul>
+            <li>Node.js (LTS version)</li>
+            <li>Git</li>
+            <li>VS Code (recommended)</li>
+          </ul>
+          <div class="code-block">
+            <pre>git clone https://github.com/cypherx/repo.git</pre>
+            <button class="copy-btn"><i class="far fa-copy"></i></button>
+          </div>
+        </div>
+        <div class="tab-content" id="termuxSetup" style="display:none">
+          <ul>
+            <li>Termux app</li>
+            <li>Node.js</li>
+            <li>Git</li>
+          </ul>
+          <div class="code-block">
+            <pre>pkg install nodejs git</pre>
+            <button class="copy-btn"><i class="far fa-copy"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Important Notice -->
+    <section class="important">
+      <div class="card warning">
+        <h3><i class="fas fa-exclamation-triangle"></i> Important Notice</h3>
+        <p><strong>CypherX</strong> is offered <em>strictly for personal and educational use only</em>.</p>
+        <p>We do <strong>not</strong> promote misuse or platform abuse.</p>
+        <p><strong>Use at your own risk.</strong></p>
+        <p>By continuing to use CypherX, you agree to these terms.</p>
+        <button id="understandBtn"><i class="fas fa-check"></i> I Understand</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modern Footer -->
+  <footer class="cypherx-footer">
+    <div class="footer-links">
+      <div>
+        <h4>Resources</h4>
+        <a href="#" id="githubLink"><i class="fab fa-github"></i> GitHub</a>
+        <a href="#" id="docsLink"><i class="fas fa-book"></i> Docs</a>
+        <a href="#" id="releasesLink"><i class="fas fa-tags"></i> Releases</a>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <a href="#" id="termsLink"><i class="fas fa-file-contract"></i> Terms</a>
+        <a href="#" id="privacyLink"><i class="fas fa-user-shield"></i> Privacy</a>
+        <a href="#" id="disclaimerLink"><i class="fas fa-exclamation-circle"></i> Disclaimer</a>
+      </div>
+    </div>
+
+    <div class="social-icons">
+      <a href="#" id="discordLink"><i class="fab fa-discord"></i></a>
+      <a href="#" id="telegramLink"><i class="fab fa-telegram"></i></a>
+      <a href="#" id="twitterLink"><i class="fab fa-twitter"></i></a>
+      <a href="#" id="youtubeLink"><i class="fab fa-youtube"></i></a>
+    </div>
+
+    <p>© 2025 CypherX Bot. All rights reserved.<br>Made with ❤️ by Taylor</p>
+    
+    <div class="footer-nav">
+      <button id="homeBtn"><i class="fas fa-home"></i></button>
+      <button id="featuresBtn" class="active"><i class="fas fa-star"></i></button>
+      <button id="deployBtn"><i class="fas fa-rocket"></i></button>
+      <button id="downloadBtn"><i class="fas fa-download"></i></button>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div id="toastContainer" class="toast-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
